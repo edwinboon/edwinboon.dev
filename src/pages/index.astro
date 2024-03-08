@@ -1,8 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets'
 ---
 
 <Layout title="Edwin Boon | Fullstack developer.">
-	<main>
+	<main class="flex items-center justify-center flex-col gap-4">
+		<h1 class="text-7xl text-teal-600">Edwin Boon</h1>
+		<h2 class="text-3xl">Fullstack Developer</h2>
+		<p class="text-lg text-center my-12">
+			Passionate about frontend, backend, opensource and a huge coffee lover and specialty beer enthusiast. 
+		</p>
+		<Image src="/images/me.png" alt="Its me Edwin" loading="eager" height={192} width={192} class="rounded-full w-48 h-48" />
 	</main>
 </Layout>	
